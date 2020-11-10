@@ -1,0 +1,286 @@
+#landing-page{
+    height: 100vh;
+}
+
+/* HEADER */
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    height: 56px;
+}
+
+.menu_toggle-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+#spacer{
+    flex: 1;
+}
+
+.nav-menu{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.menu-logo{
+    margin-left: 1rem;
+}
+
+.menu-logo a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: Lobster, cursive;
+}
+
+.menu-items ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu-items li{
+    padding: 0 0.5rem;
+}
+
+.menu-items a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-items a:hover, .menu-items a:active{
+    color: #0800ff;
+}
+
+/* CONTENT */
+
+/* DIV ABOUT-ME */
+
+#about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: url('../../utils/images/fundo_imgmob.jpg') no-repeat;
+
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+}
+
+#about-me h1#title-about{
+    font-size: 1.3em;
+    margin-top: 64px;
+    font-family: Dancing Script, cursive;
+    transition: color 0.3s ease-in-out;
+}
+
+#about-me h1#title-about:hover{
+    color: #0a38c2
+}
+
+#about-me img{
+    border: 1px solid #0a38c2;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 60vw;
+    margin-top: 32px;
+    margin-bottom: 64px;
+}
+
+#about-me p{
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 12px;
+}
+
+#about-me p a{
+    text-decoration: underline;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+#about-me p a:hover{
+    color: #0800ff
+}
+
+
+/* DIV SKILLS */
+
+#skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+
+    padding: 3%;
+}
+
+#skills h1#title-skills{
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+#skills #skills-icons{
+    display: flex;
+    flex-direction: column;
+}
+
+#skills-icons #high ul,
+#skills-icons #low ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#skills-icons #high ul li,
+#skills-icons #low ul li{
+    padding: 10%;
+    color: #FFF;
+    transition: all 0.2s ease-in-out;
+}
+
+#skills-icons #high ul li p,
+#skills-icons #low ul li p{
+    text-align: center;
+}
+
+#skills-icons #low ul li:last-child{
+    margin-bottom: 32px;
+}
+
+#skills-icons #high ul li:hover,
+#skills-icons #low ul li:hover{
+    color: #0a38c2;
+    transform: scale(1.2);
+}
+
+/* CONTACT DIV */
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    background: url('../../utils/images/fundo_img.jpg') no-repeat;
+    padding: 5%;
+}
+
+#contact a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 64px;
+    margin-bottom: 64px;
+
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+
+    text-decoration: none;
+    color: #fff;
+
+    transition: all 0.3s ease-in-out;
+}
+
+#contact a:hover{
+    background-color: #0800ff;
+    transform: scale(1.2)
+}
+
+/* FOOTER */
+
+#landing-page footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #000;
+    padding: 1%;
+}
+
+#landing-page footer a{
+    transition: all 0.2s ease-in-out;
+}
+
+#landing-page footer a:hover{
+    transform: scale(1.2)
+}
+
+/* BREAKPOINTS */
+
+@media(max-width: 768px){
+    /* HEADER */
+
+    .menu-items{
+        display: none;
+    }
+
+}
+
+@media(min-width: 1024px){
+    /* HEADER */
+
+    .menu_toggle-button{
+        display: none;
+    }
+
+    /* CONTENT */
+
+    /* ABOUT */
+
+    #about-me{
+        background: url('../../utils/images/fundo_img2.jpg');
+    }
+
+    #about-me h1#title-about{
+        font-size: 2em;
+    }
+
+    #about-me img{
+        width: 24vw;
+    }
+
+    #about-me p{
+        font-size: 1rem;
+    }
+
+    /* SKILLS */
+
+    #skills{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #skills-icons #high ul,
+    #skills-icons #low ul{
+        flex-direction: row;
+    }
+
+}
