@@ -235,7 +235,7 @@
 
 /* BREAKPOINTS */
 
-@media(max-width: 768px){
+@media(max-width: 1024px){
     /* HEADER */
 
     .menu-items{
@@ -244,7 +244,7 @@
 
 }
 
-@media(min-width: 1024px){
+@media(min-width: 1025px){
     /* HEADER */
 
     .menu_toggle-button{
@@ -268,7 +268,7 @@
     }
 
     #about-me p{
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     /* SKILLS */

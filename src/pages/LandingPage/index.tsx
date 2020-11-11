@@ -62,7 +62,7 @@ function LandingPage(){
                         Tenho 17 anos, sou técnico em redes de computadores e estudo programação a dois anos e meio. Atualmente
                         estou focado em desenvolvimento web e mobile, e sou apaixonado por frameworks javascript, 
                         sendo que minhas preferidas são React e Node.js. Gosto muito de resolver problemas e estou sempre em busca de mais aprendizado
-                        para que posssa melhorar como programador! Quer ver alguns de meus projetos além desse site?
+                        para que possa melhorar como programador! Quer ver alguns de meus projetos além desse site?
                         <a href="https://github.com/caiokronuz" target="_blank" rel="noopener noreferrer"> Clique aqui </a>
                         para dar uma olhadinha no meu github!
                     </p>
